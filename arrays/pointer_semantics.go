@@ -13,5 +13,5 @@ func main() {
 			fmt.Printf("after[%s]\n", five[i])
 		}
 	}
-  fmt.Println("after loop", five[1])
+	fmt.Println("after loop", five[1])
 }

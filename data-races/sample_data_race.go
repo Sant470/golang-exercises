@@ -35,11 +35,8 @@ import (
 	"sync"
 )
 
-
-
 // counter is a variable incremented by all Goroutines.
 var counter int
-
 
 func main() {
 	// Number of Goroutines to use.
@@ -65,7 +62,7 @@ func main() {
 				value := counter
 				// Increment our local value of Counter.
 				value++
-        fmt.Println("value: ",value)
+				fmt.Println("value: ", value)
 				// Store the value back into Counter.
 				counter = value
 			}

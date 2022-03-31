@@ -54,7 +54,7 @@ func main() {
 					// Increment our local value of counter.
 					value++
 
-          fmt.Println("value: ",value)
+					fmt.Println("value: ", value)
 					// Store the value back into counter.
 					counter = value
 				}

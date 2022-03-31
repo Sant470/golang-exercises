@@ -2,7 +2,6 @@
 // Slice
 // ------------------
 
-
 package main
 
 import "fmt"
@@ -10,10 +9,10 @@ import "fmt"
 func main() {
 	friends := []string{"Annie", "Betty", "Charley", "Doug", "Edward"}
 	for _, friend := range friends {
-    friends = friends[:2]
-    fmt.Println("friend: ", friend)
+		friends = friends[:2]
+		fmt.Println("friend: ", friend)
 	}
-  fmt.Println("after for loop: ",friends)
+	fmt.Println("after for loop: ", friends)
 }
 
 /*

@@ -2,7 +2,6 @@
 // Slice
 // ------------------
 
-
 /*
 slice is a three word data structure
 1. Pointer to a backing array
@@ -15,8 +14,6 @@ It's reference type along with 'map', 'channels', 'interface values' and 'functi
 
 */
 
-
-
 package main
 
 import "fmt"
@@ -24,8 +21,8 @@ import "fmt"
 func main() {
 	friends := []string{"Annie", "Betty", "Charley", "Doug", "Edward"}
 	for i := range friends {
-    friends = friends[0:2]
-    fmt.Println("friend: ", friends[i])
+		friends = friends[0:2]
+		fmt.Println("friend: ", friends[i])
 	}
 }
 

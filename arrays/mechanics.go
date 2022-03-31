@@ -5,17 +5,16 @@ We also define it based on an element size(int, strings, ...) that are our predi
 Every index is a predictable stride from the other, making the prefetcher to bring in those cache lines way ahead of when you need them.
 */
 
-
 package main
+
 import "fmt"
 
 func main() {
-  fruits := [5]string {"Apple", "Banana", "Orange", "Grape", "Plum"}
-  for i, _ := range fruits {
-    fmt.Println("index: ", i, "address: ", &fruits[i])
-  }
+	fruits := [5]string{"Apple", "Banana", "Orange", "Grape", "Plum"}
+	for i, _ := range fruits {
+		fmt.Println("index: ", i, "address: ", &fruits[i])
+	}
 }
-
 
 /*
 index:  0 address:  0xc000100050

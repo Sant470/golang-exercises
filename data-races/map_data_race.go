@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-  "sync"
+	"sync"
 )
 
 var scores = make(map[string]int)
@@ -14,18 +14,17 @@ func main() {
 
 	go func() {
 		for i := 0; i < 10000; i++ {
-      scores["A"]++
+			scores["A"]++
 		}
 		wg.Done()
 	}()
 
-  go func() {
-    for i := 0; i < 10000; i++ {
-      scores["B"]++
-    }
-    wg.Done()
-  }()
-
+	go func() {
+		for i := 0; i < 10000; i++ {
+			scores["B"]++
+		}
+		wg.Done()
+	}()
 
 	// Wait for the write Goroutine to finish.
 	wg.Wait()
